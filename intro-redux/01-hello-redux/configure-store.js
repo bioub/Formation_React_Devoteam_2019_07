@@ -1,0 +1,20 @@
+const { createStore } = require("redux");
+
+// reducer : la fonction qui met à jour le state (du store)
+// reçoit le state actuel, et une action
+// retourne le prochain state mais sous la forme d'un nouvel objet (changement immuable)
+function reducer(state = { count: 10 }, action) {
+  switch (action.type) {
+    case "COUNTER_INCREMENT":
+      return { ...state, count: state.count + 1 };
+    case "COUNTER_DECREMENT":
+      return { ...state, count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+exports.configureStore = function configureStore() {
+  const store = createStore(reducer);
+  return store;
+};

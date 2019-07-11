@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "langage"
+		},
+		{
+			"path": "todo-react"
+		},
+		{
+			"path": "intro-redux"
 		}
 	],
 	"settings": {}
