@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 /*
-export default class Counter extends Component {
+export default class CounterUncontrolled extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,7 +16,7 @@ export default class Counter extends Component {
   };
   render() {
     return (
-      <div className="Counter">
+      <div className="CounterUncontrolled">
         <button onClick={this.handleClick}>{this.state.count}</button>
       </div>
     )
@@ -25,7 +25,7 @@ export default class Counter extends Component {
 */
 
 // plus court mais pas encore normé (stage 3 du TC39)
-export default class Counter extends Component {
+export default class CounterUncontrolled extends Component {
   state = {
     count: 0,
   };

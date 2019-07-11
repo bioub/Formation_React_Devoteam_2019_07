@@ -5,6 +5,7 @@ import React from 'react'
 
 // functionnal component / stateless component (pas de state)
 function Hello({ name = '' }) {
+  // React.createElement('div', {className: 'Hello'}, 'Hello' + name);
   return (
     <div className="Hello">
       Hello {name}
