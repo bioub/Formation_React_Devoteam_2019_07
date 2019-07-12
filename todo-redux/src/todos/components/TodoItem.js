@@ -5,7 +5,7 @@ function TodoItem(props) {
 
   return (
     <div className="TodoItem">
-      <input type="checkbox" checked={props.todo.completed} />
+      <input type="checkbox" checked={props.todo.completed} onChange={() => props.onTodoCheck(props.todo)} />
       {props.todo.title}
       <button onClick={() => props.onTodoDelete(props.todo)}>-</button>
     </div>
