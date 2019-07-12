@@ -3,6 +3,7 @@ import css from './Select.module.css';
 
 export default class Select extends Component {
   state = {
+    opened: true,
     selected: {
       value: 'romain',
       label: 'Romain',

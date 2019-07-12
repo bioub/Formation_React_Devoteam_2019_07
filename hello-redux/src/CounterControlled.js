@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+// Higher Order Component (Advanced)
+// const ComponentEnhanced = hoc(Component);
+
+// const ButtonBootstrap = applyTheme(Bootstrap)(Button);
+// const ButtonConnectedToRedux = connect(config)(Button);
+// const ButtonConnectedToRedux = connect(mapStateToProps, mapDispatchToProps)(Button);
+
 function CounterControlled(props) {
   return (
     <div className="CounterControlled">

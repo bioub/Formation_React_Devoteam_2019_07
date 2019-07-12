@@ -47,7 +47,7 @@ export default class Todo extends Component {
           onTodoChange={this.handleTodoChange}
           onTodoAdd={this.handleTodoAdd}
         />
-        <TodoList onTodoDelete={this.handleTodoDelete} todos={this.state.items} />
+        <TodoList todos={this.state.items} onTodoDelete={this.handleTodoDelete} />
       </div>
     );
   }

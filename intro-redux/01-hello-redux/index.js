@@ -1,4 +1,4 @@
-const { configureStore } = require ('./configure-store');
+const { configureStore } = require ('./configureStore');
 
 /** @type {import('redux').Store} */
 const store = configureStore();
@@ -6,6 +6,12 @@ const store = configureStore();
 store.subscribe(() => {
   console.log('state changed');
   console.log(store.getState());
+
+  // props = {
+  //  count: state.count
+  // }
+
+  // <CounterControlled {...props} />
 })
 
 function counterIncrement() {
