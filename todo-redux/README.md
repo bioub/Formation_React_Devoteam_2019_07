@@ -46,3 +46,18 @@ Finir TodoFormContainer en lui passant une fonction onTodoChange aux props (qui 
 
 Ecrire TodoListContainer qui doit recevoir du state une props todos et créer une props onTodoDelete qui fera le dispatch de TODO_DELETE
 
+## (Optionnel) Selecteurs
+
+Dans un fichier src/todos/selectors.js
+
+Créer les fonctions qui iront rechercher les valeurs sur le state ex :
+
+```
+function selectValue(state) {
+  return state.value;
+}
+```
+
+Appeler ces fonctions depuis les `mapStateToProps``
+
+
